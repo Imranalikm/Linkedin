@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+  background: rgb(235,235,235);
+}
+header .nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 0.3rem 4rem;
+  background: #fff;
+  
+}
+header .nav-container .left,
+header .nav-container .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+header .nav-container .left{
+  padding-left: 3rem;
+  display: flex;
+  gap: 0.7rem;
+
+  
+}
+
+header .nav-container .logo i{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #0a66c2;
+}
+header .nav-container .left .input{
+  background:rgb(237,245,246);
+  width:100%;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items:center;
+  gap: 0.5rem;
+  border-radius: 0.2rem;
+}
+header .nav-container .left .input input[type='search']{
+  width: 14rem;;
+  border: none;
+  background: transparent;
+
+}
+header .nav-container .left .input input[type='search']::placeholder{
+  font-size: 0.7rem;
+  color: rgb(92, 81, 81);
+  font-weight: 100;
+}
+header .nav-container .left .input i{
+  font-size: 0.8rem;
+  color: grey;
+
+}
+header .nav-container .right .home,
+header .nav-container .right .networks,
+header .nav-container .right .jobs,
+header .nav-container .right .Messaging,
+header .nav-container .right .Notifications,
+header .nav-container .right .me,
+header .nav-container .right .Work{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+header .nav-container .right .home,
+header .nav-container .right .networks:hover,
+header .nav-container .right .jobs:hover,
+header .nav-container .right .Messaging:hover,
+header .nav-container .right .Notifications:hover,
+header .nav-container .right .me .down:hover,
+header .nav-container .right .Work .down:hover{
+  color: black;
+}
+
+header .nav-container .right .networks,
+header .nav-container .right .jobs,
+header .nav-container .right .Messaging,
+header .nav-container .right .Notifications,
+header .nav-container .right .Work{
+
+  color: grey;
+
+}
+
+header .nav-container .right .home i
+header .nav-container .right .networks i,
+header .nav-container .right .jobs i,
+header .nav-container .right .Messaging i,
+header .nav-container .right .Notifications i{
+
+  font-size: 1.2rem;
+
+}
+
+header .nav-container .right .me .down,
+header .nav-container .right .Work .down{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 0.5rem;
+ color: grey;
+}
+header .nav-container .right .me i:first-child{
+  background: gray;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.nav-container a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  width: 7rem;
+  text-align: center;
+  cursor: pointer;
+  color: gray;
+
+}
+.nav-container a:hover{
+  text-decoration: underline;
+}
+/*header ends*/
+.container{
+  display: grid;
+  grid-template-columns: 20% 52% 28%;
+  gap: 1.4rem;
+  width:85%;
+  margin: 1.8rem auto;
+}
+aside .sidebar{
+  background: #fff;
+  width: 100%;
+  height: 48vh;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+aside .sidebar .top{
+  width: 100%;
+  height: 11vh;
+  background-image: url(https://static.licdn.com/sc/h/55k1z8997gh8dwtihm11aajyq);
+  position:absolute;
+
+}
+aside .sidebar .top img{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  top: 50%;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #fff;
+
+
+
+}
+aside .sidebar .profile{
+  position: relative;
+  text-align: center;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  
+}
+.sidebar .profile a{
+  text-decoration: none;
+  color: #000;
+}
+.sidebar .profile a:hover{
+  text-decoration: underline;
+}
+
+.sidebar .profile small{
+  font-size: 0.7rem;
+  color: gray;
+
+}
+.sidebar .view{
+  position: relative;
+  display: flex;
+  flex-direction:column ;
+  padding: 0 0;
+  top: 15%;
+  margin-top: 7rem;
+ 
+}
+.sidebar .view .views{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem 0 0.4rem 0;
+  padding:0.5 0.5rem;
+  cursor: pointer;
+  font-weight: 100;
+  
+
+}
+.sidebar .view .views:hover{
+  background-color:rgb(209, 209, 209);
+
+}
+.sidebar .view .views h6{
+  color: gray;
+  font-weight: 100;
+  padding-inline-start: 2%;
+  
+}
+.sidebar .view .views a{
+  color: rgb(39, 39, 219);
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding-inline-end: 2%;
+
+}
+.sidebar .premium{
+  position: relative;
+  top: 15%;
+  
+}
+.sidebar .premium h6{
+  color: gray;
+  font-weight: 100;
+  margin-top: 8px;
+  margin-left: 0 rem 0;
+  padding-inline-start: 2%;
+}
+.sidebar .premium a{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  color: black;
+
+} 
+.sidebar .premium a i{
+  color: rgb(211,211,33);
+}
+hr#premium{
+  margin: 0.5rem 0 ;
+}
+hr#profile,
+hr#view
+hr#premium{
+  margin: 0.5rem 0;
+}
+.items{
+  position: relative;
+  top: 15%;
+  display: flex;
+  margin-left: 1rem;
+  gap: 0.5rem;
+  color: gray;
+}
+aside .recentjobs{
+  background: #fff;
+  margin-top: 2rem;
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+aside .recentjobs .recent{
+  margin: 1rem;
+  color: gray;
+}
+aside .recentjobs .recent h6{
+ font-weight: 100;
+ color: gray;
+}
+ .one{
+  display: flex;
+   margin-top: 0.7rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+.one i{
+  font-size: 0.8rem;
+
+}
+aside .recentjobs .groups{
+  margin: 1rem 0 0 1rem;
+
+   
+}
+aside .recentjobs .groups h5{
+  color: #0a66c2;
+  font-size: 0.7rem;
+}
+aside .recentjobs .groups .two{
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  gap: 0.5rem;
+  color: rgb(83, 83, 83);
+}
+.groups .show{
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.5rem;
+  color: gray;
+}
+aside .events{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem  1rem 0 1rem;
+}
+aside .events h6:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+aside .events i{
+  color: gray;
+  cursor: pointer;
+}
+.discover{
+  margin: 2rem 0 0rem;
+  text-align: center;
+  border-top: 1px solid rgb(144, 144, 144);
+  padding-top: 1rem;
+
+
+}
+.discover a{
+  text-decoration: none;
+  color: gray;
+}
+/*sidebar ends*/
+main{
+  background: #fff;
+  border-radius: 0.8rem;
+  height:60vh;
+  position: relative;
+
+}
+main #close{
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  color: gray;
+}
+main .events{
+  margin: 1.5rem 0 0 1rem;
+  font-weight: 200;
+}
+main  .events h3{
+  font-weight: 200;
+  margin-bottom: .4rem;
+}
+.box img{
+  width: 100%;
+}
+.box .content{
+  padding: 0.5rem 1rem;
+}
+.box .content p{
+  font-weight: 100;
+  color: gray;
+
+}
+main .box .btn{
+  border: none;
+  background: #0a66c2;
+  padding: 0.5rem  1rem;
+  border-radius: 5rem;
+  margin: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+main .media{
+  background: #fff;
+  border-radius: 0.8rem;
+  height:20vh;
+  margin-top: 1rem;
+}
+main .media .search{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .media .search img{
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+main .media .search input{
+  border-radius: 5rem;
+  border: 1px solid gray;
+  width: 100%;
+  padding: 0 1.5rem;
+   cursor: pointer;
+  transition: 0.3s all ease;
+}
+main .media .search input:hover{
+  background: rgb(233, 233, 233);
+  
+}
+main .media .posts{
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 2rem;
+  cursor: pointer;
+}
+main .media .posts .post{
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem .5rem;
+  opacity: .8;
+}
+main .media .posts .post h5{
+  font-weight: 400;
+
+}
+
+main .media .posts .post:nth-child(1) i{
+  color: #0a66c2;
+}
+main .media .posts .post:nth-child(2) i{
+  color: #26db0e;
+}
+main .media .posts .post:nth-child(3) i{
+  color: #3ed7e2;
+}
+main .media .posts .post:nth-child(4) i{
+  color: #bb17a5;
+}
+main .media .posts .post:hover{
+  background: rgb(235,235,235);
+  border-radius: 0.8rem;
+  
+}
+main .feed{
+  background: #fff;
+  border-radius: 0.8rem;
+  height:127vh;
+  margin-top: .7rem;
+ 
+}
+main .feed .feedleft{
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+.feedleft img{
+  height: 3.2rem ;
+  width: 3.2rem;
+  
+}
+.feedlefttext{
+  margin-left: 1rem;
+}
+.feedleft .feedlefttext h6{
+  color: gray;
+  font-weight: 50;
+  font-size: 11px;
+  gap: 1rem;
+
+}
+.feedright{
+    position: absolute;
+    right: 2rem;
+    top: 36rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.feedright h6{
+  font-size: medium;
+  color: #0a66c2;
+}
+.feedright i{
+  font-size: medium;
+  color: #0a66c2;
+}
+.feedright .threedot i{
+  color: gray;
+}
+
+}
+.feedvid a{
+  text-decoration: none;
+  color:blue
+}
+.feedvid p{
+  font-weight: 100;
+  font-size: small;
+  margin-left: 1rem;
+  
+  font-weight: 100;
+}
+.feedvid .para1{
+  margin-top: 1rem;
+}
+.feedvid .feedimg img{
+  width: 100%;
+  margin-top: 1rem;
+  height: 85vh;
+  overflow: hidden;
+}
+.underimg{
+  display: flex;
+  margin-left: 1rem;
+  margin-top: .5rem;
+  justify-content:space-between ;
+  align-items: center;
+  margin-right: 1rem;
+  color: gray;
+  font-weight: 100;
+  font-size: small;
+  border-bottom:1px solid gray;
+}
+.feedresponse{
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
+  cursor: pointer;
+  align-items: center;
+  color: gray;
+  
+  
+}
+.feedresponse .post{
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem .5rem;
+  opacity: .8;
+  font-weight: 400;
+}
+.feedresponse .post:hover{
+  background: rgb(235,235,235);
+  border-radius: 0.8rem;
+  
+}
+
+
+
+/*main ends..*/
+/*rightside starts*/
+.right_side{
+  background: #fff;
+  height: 55vh;
+  border-radius: 0.8rem;
+}
+.right_side .news{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.right_side .news h4{
+  font-weight: 400;
+  
+}
+.right_side .latestnews{
+  margin: 0 1rem;
+  
+}
+
+
+.right_side .latestnews .one{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.right_side .latestnews .one i{
+  font-size: 0.5rem;
+  color: gray;
+}
+.right_side .latestnews .two{
+  margin: 0 1.9rem;
+  font-size: 0.8rem;
+  color: gray;
+}
+.right_side .latestnews .one h5{
+  font-weight: 500;
+}
+.right_side .showmore{
+  display: flex;
+  gap: 0.5rem;
+  color: gray;
+  align-items: center;
+  margin: 1rem;
+  cursor: pointer;
+}
+.right_side .showmore:hover{
+  background: #d6d2d2;
+  border-radius: 0.8rem;
+  margin:1rem 1rem;
+  padding-left: 1rem;
+}
+.right_side .showmore h5{
+  font-weight: 400;
+
+}
+.right2{
+  background: #fff;
+  height: 41vh;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+
+}
+.right2 img{
+  width: 100%;
+  border-radius: .8rem;
+  height: 100%;
+}
